@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="lightbox-wrapper">
+    <div class="lightbox"></div>
+    <div class="modal">
+      <h2>Questions? Comments?</h2>
+      <h1>Let us know!</h1>
+      <form action="#" method="POST">
+        <div>
+          <label for="subject">Subject/Summary</label>
+          <input class="input" type="text" id="subject" />
+        </div>
+        <div>
+          <label for="comments">Your Comments</label>
+          <textarea class="input" id="comments"></textarea>
+        </div>
+        <div>
+          <label for="name">Your Name</label>
+          <input class="input" type="text" id="name" />
+        </div>
+        <div>
+          <label for="company">Company</label>
+          <input class="input" type="text" id="company">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input class="input" type="email" id="email" />
+        </div>
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="wrapper">
+
+    <!-- MENU BEGINS -->
+    <div class="dropdown">
+      <div class="menu-btn"><h1>Menu</h1></div>
+
+      <ul class="main-menu">
+        <li class="menu-item nested-btn">Browse
+          
+        </li>
+        <ul class="nested-menu">
+            <li class="nested-item"><a href="http://www.google.ca">I'm nested!</a></li>
+            <li class="nested-item">Me too!</li>
+            <li class="nested-item">Me three!</li>
+            <li class="nested-item">Me four!</li>
+          </ul>
+        <li class="menu-item"><a href="http://www.google.ca">About</a></li>
+        <li class="menu-item"><a href="http://www.google.ca">Blog</a></li>
+        <li class="menu-item" id="form-btn"><a href="#">Ask a Question</a></li>
+      </ul>
+    </div>
+    <!-- MENU ENDS -->
+
+  </div>
+
+  
+  <!-- LOAD SCRIPTS -->
+  <script src="http://code.jquery.com/jquery-1.5.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="./drop_down.js"></script>
+</body>
+</html>
